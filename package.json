@@ -1,0 +1,23 @@
+{
+    "name": "autoads",
+    "version": "1.0.0",
+    "description": "k",
+    "main": "index.ts",
+    "scripts": {
+        "build": "tsc --build",
+        "start": "node ./build/index",
+        "dev": "tsc --build && node ./build/index"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/node": "^16.3.3",
+        "@types/selenium-webdriver": "^4.0.15",
+        "ts-node": "^10.0.0",
+        "typescript": "^4.3.4"
+    },
+    "keywords": [],
+    "dependencies": {
+        "selenium-webdriver": "^4.0.0-beta.4"
+    }
+}
