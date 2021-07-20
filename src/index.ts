@@ -7,11 +7,12 @@ let chromeOptions = {};
 let startHost: string = 'https://lnesys.starchaser.me';
 let totalAds: number[] = [0, 0, 0, 0];
 let totalRes: number[] = [0, 0, 0, 0];
+let version: string = 't20-07-21';
 
 
 //MADE WITH <3 (starchaser.me);
 //APP CONFIG
-let keywords: string[] = ['micropile', 'ไมโครไพล์'];
+let keywords: string[] = ['micropile', '�?มโ�?ร�?พล�?'];
 let whitelist: string[] = ['narongmicrospun'];
 let SEOPumingKeywords: string[] = ['narong microspun'];
 let SEOMaxiumClickingResult = 1;
@@ -164,7 +165,7 @@ let homeSearch = async (keyword: string) => {
             await driver.switchTo().activeElement().sendKeys(Key.ENTER);
             break;
             // if (currentUrl == url) console.log('Button found: ' + name);
-            // if (element.isEnabled() && element.isDisplayed() && name == 'ค้นหาด้วย Google' && url == currentUrl) {
+            // if (element.isEnabled() && element.isDisplayed() && name == '�?้นหาด้วย Google' && url == currentUrl) {
             //     sleep(2000);
             //     await element.click().catch(e => { });
             //     break;
@@ -177,6 +178,7 @@ driver.get(startHost).catch(() => {
     console.log('[Start failed!]');
     return process.exit(0);
 }).then(async () => {
+    console.log('micro-adsclicker v' + version)
     while (true) {
         if (doADSClicker) {
             console.log('[Starting ads click!]');
