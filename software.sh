@@ -11,6 +11,8 @@ if [ "$EUID" -ne 0 ]
   then echo "Please run as root or sudo"
   exit
 fi
+echo 'Trying remove old directory'
+sud rm -rf micro-adsclick
 echo 'Installing nodejs...'
 sudo apt-get install -y nodejs
 echo 'Installing npm...'
