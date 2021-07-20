@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Software installer for micro-adsclick
+# Software installer for micro-adclick
 #
 # @author: ST4RCHASER <underscore@starchaser.me>
 # @license: GNU v3
@@ -12,7 +12,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 echo 'Trying remove old directory'
-sud rm -rf micro-adsclick
+sud rm -rf micro-adclick
 echo 'Installing nodejs...'
 sudo apt-get install -y nodejs
 echo 'Installing npm...'
@@ -26,7 +26,7 @@ echo 'Installing chromium-browser...'
 sudo apt install -y chromium-browser
 echo 'Install ing git...'
 sudo apt-get install -y git
-echo 'Cloneing micro-adsclick'
+echo 'Cloneing micro-adclick'
 git clone https://github.com/ST4RCHASER/micro-adclick
 cd micro-adclick/
 echo 'Settingup permission...'
@@ -34,4 +34,4 @@ chmod 777 -R *
 echo 'Installing dependencies...'
 yarn
 echo 'Script finished!'
-echo 'Try "yarn dev" to run micro-autoads'
+echo 'Try "yarn dev" to run micro-autoad'
