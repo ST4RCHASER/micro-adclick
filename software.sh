@@ -5,14 +5,14 @@
 # @author: ST4RCHASER <underscore@starchaser.me>
 # @license: GNU v3
 # @date: July 20, 2021
-# @version: 1.0
+# @version: 1.1
 ##
 if [ "$EUID" -ne 0 ]
   then echo "Please run as root or sudo"
   exit
 fi
 echo 'Trying remove old directory'
-sud rm -rf micro-adclick
+sudo rm -rf micro-adclick
 echo 'Installing nodejs...'
 sudo apt-get install -y nodejs
 echo 'Installing npm...'
@@ -26,9 +26,6 @@ echo 'Installing chromium-browser...'
 sudo apt install -y chromium-browser
 echo 'Install ing git...'
 sudo apt-get install -y git
-echo 'Cloneing micro-adclick'
-git clone https://github.com/ST4RCHASER/micro-adclick
-cd micro-adclick/
 echo 'Settingup permission...'
 chmod 777 -R *
 echo 'Installing dependencies...'
