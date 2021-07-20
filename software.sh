@@ -11,8 +11,8 @@ if [ "$EUID" -ne 0 ]
   then echo "Please run as root or sudo"
   exit
 fi
-echo 'Trying remove old directory'
-sudo rm -rf micro-adclick
+echo 'Update using git...'
+git pull
 echo 'Installing nodejs...'
 sudo apt-get install -y nodejs
 echo 'Installing npm...'
@@ -24,8 +24,6 @@ sudo npm install -g n
 sudo n stable
 echo 'Installing chromium-browser...'
 sudo apt install -y chromium-browser
-echo 'Install ing git...'
-sudo apt-get install -y git
 echo 'Settingup permission...'
 chmod 777 -R *
 echo 'Installing dependencies...'
