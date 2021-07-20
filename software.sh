@@ -28,7 +28,7 @@ echo 'Install ing git...'
 sudo apt-get install -y git
 echo 'Cloneing micro-adsclick'
 git clone https://github.com/ST4RCHASER/micro-adclick
-cd micro-adsclick
+cd micro-adclick/
 echo 'Settingup permission...'
 chmod 777 -R *
 echo 'Installing dependencies...'
