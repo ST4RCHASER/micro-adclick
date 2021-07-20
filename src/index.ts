@@ -12,8 +12,8 @@ let totalRes: number[] = [0, 0, 0, 0];
 //MADE WITH <3 (starchaser.me);
 //APP CONFIG
 let keywords: string[] = ['micropile', 'ไมโครไพล์'];
-let whitelist: string[] = ['narongmicrospun', 'mechotpile'];
-let SEOPumingKeywords: string[] = ['narong microspun','starchaser.me'];
+let whitelist: string[] = ['narongmicrospun'];
+let SEOPumingKeywords: string[] = ['narong microspun'];
 let SEOMaxiumClickingResult = 1;
 let doBumpSEO = true;
 let doADSClicker = true;
