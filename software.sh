@@ -28,5 +28,7 @@ echo 'Settingup permission...'
 chmod 777 -R *
 echo 'Installing dependencies...'
 yarn
+echo 'Building script'
+yarn build
 echo 'Script finished!'
 echo 'Try "yarn dev" to run micro-autoad'
