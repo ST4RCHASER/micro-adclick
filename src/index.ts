@@ -7,7 +7,8 @@ let chromeOptions = {};
 let startHost: string = 'https://lnesys.starchaser.me';
 let totalAds: number[] = [0, 0, 0, 0];
 let totalRes: number[] = [0, 0, 0, 0];
-let version: string = 't20-07-21';
+// let version: string = 't20-07-21';
+let version: string = 't11-09-21';
 
 
 //MADE WITH <3 (starchaser.me);
@@ -174,8 +175,8 @@ let homeSearch = async (keyword: string) => {
         resolve(true);
     })
 }
-driver.get(startHost).catch(() => {
-    console.log('[Start failed!]');
+driver.get(startHost).catch((e: any) => {
+    console.log('[Start failed!]', e);
     return process.exit(0);
 }).then(async () => {
     console.log('micro-adsclicker v' + version)
