@@ -12,6 +12,7 @@ if [ "$EUID" -ne 0 ]
   exit
 fi
 echo 'Update using git...'
+git reset --hard HEAD
 git pull
 echo 'Installing nodejs...'
 sudo apt-get install -y nodejs
